@@ -42,28 +42,29 @@ Click the "Fork" button at the top-right of this repository.
 2. Clone Your Fork
 
 bash
-git clone https://github.com/juneikon/otaku-stream-tracker.git
-cd otaku-stream-tracker
-Create a Feature Branch
+-git clone https://github.com/juneikon/otaku-stream-tracker.git
+-cd otaku-stream-tracker
+-Create a Feature Branch
 
 bash
-git checkout -b feature/your-feature-name
-(Example: feature/add-dark-mode)
+- git checkout -b feature/your-feature-name
+- (Example: feature/add-dark-mode)
 
 3. Make & Commit Changes
 
 bash
-git add .
-git commit -m "Description of your changes"
-Push to GitHub
+-git add .
+-git commit -m "Description of your changes"
+-Push to GitHub
 
 bash
-git push origin feature/your-feature-name
-Open a Pull Request
+-git push origin feature/your-feature-name
+-Open a Pull Request
 
 4. Go to your fork on GitHub.
 
-Click "Compare & Pull Request".
+-Click "Compare & Pull Request".
 
-Add a clear title/description and submit!          
+-Add a clear title/description and submit!          
+
 
