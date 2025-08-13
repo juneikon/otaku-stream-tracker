@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="mb-4">Add New Anime</h1>
+<form method="POST">
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="title" required>
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            <label for="episodes_watched" class="form-label">Episodes Watched</label>
+            <input type="number" class="form-control" id="episodes_watched" name="episodes_watched" value="0" min="0">
+        </div>
+        <div class="col">
+            <label for="total_episodes" class="form-label">Total Episodes</label>
+            <input type="number" class="form-control" id="total_episodes" name="total_episodes" required min="1">
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="status" class="form-label">Status</label>
+        <select class="form-select" id="status" name="status">
+            <option value="Watching">Watching</option>
+            <option value="Completed">Completed</option>
+            <option value="On Hold">On Hold</option>
+            <option value="Dropped">Dropped</option>
+            <option value="Plan to Watch">Plan to Watch</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="notes" class="form-label">Notes</label>
+        <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Anime</button>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="mb-4">Edit {{ anime.title }}</h1>
+<form method="POST">
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="title" value="{{ anime.title }}" required>
+    </div>
+    <div class="row mb-3">
+        <div class="col">
+            <label for="episodes_watched" class="form-label">Episodes Watched</label>
+            <input type="number" class="form-control" id="episodes_watched" name="episodes_watched" 
+                   value="{{ anime.episodes_watched }}" min="0">
+        </div>
+        <div class="col">
+            <label for="total_episodes" class="form-label">Total Episodes</label>
+            <input type="number" class="form-control" id="total_episodes" name="total_episodes" 
+                   value="{{ anime.total_episodes }}" required min="1">
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="status" class="form-label">Status</label>
+        <select class="form-select" id="status" name="status">
+            {% for status in ['Watching', 'Completed', 'On Hold', 'Dropped', 'Plan to Watch'] %}
+                <option value="{{ status }}" {% if anime.status == status %}selected{% endif %}>{{ status }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="notes" class="form-label">Notes</label>
+        <textarea class="form-control" id="notes" name="notes" rows="3">{{ anime.notes or '' }}</textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}
