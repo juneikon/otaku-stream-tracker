@@ -1,12 +1,6 @@
 # 🎌 Otaku Stream Tracker
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
-[![Flask](https://img.shields.io/badge/Flask-2.3-green.svg)](https://flask.palletsprojects.com/)
-[![License](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)
-
 A responsive web application to track your anime watchlist with progress monitoring. 
-
-![Screenshot](https://via.placeholder.com/800x400?text=App+Screenshot+Here) *(Replace with actual screenshot later)*
 
 ## ✨ Features
 
@@ -30,9 +24,11 @@ A responsive web application to track your anime watchlist with progress monitor
    ```bash
    git clone https://github.com/juneikon/otaku-stream-tracker.git
    cd otaku-stream-tracker
+   
 2. Install dependencies:
    pip install -r requirements.txt
-3. Run the app:
+   
+4. Run the app:
    python app.py
 
 
@@ -46,7 +42,7 @@ Click the "Fork" button at the top-right of this repository.
 2. Clone Your Fork
 
 bash
-git clone https://github.com/YOUR-USERNAME/otaku-stream-tracker.git
+git clone https://github.com/juneikon/otaku-stream-tracker.git
 cd otaku-stream-tracker
 Create a Feature Branch
 
@@ -70,3 +66,4 @@ Open a Pull Request
 Click "Compare & Pull Request".
 
 Add a clear title/description and submit!          
+
